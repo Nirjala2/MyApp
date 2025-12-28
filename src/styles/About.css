@@ -1,0 +1,306 @@
+/* About Section - Updated for scroll button */
+.about-section {
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.about-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+
+.about-tagline {
+  color: #4a6cf7;
+  font-size: 0.9rem;
+  font-weight: 500;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Main Card */
+.about-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(74, 108, 247, 0.1);
+  box-shadow: 0 4px 20px rgba(74, 108, 247, 0.08);
+}
+
+/* Description */
+.about-description {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(74, 108, 247, 0.1);
+}
+
+.about-description p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+}
+
+/* Specialities */
+.specialities-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(74, 108, 247, 0.1);
+}
+
+.specialities-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-icon {
+  font-size: 1rem;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.specialities-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.speciality-tag {
+  color: #4a6cf7;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tag-separator {
+  color: #ccc;
+  font-size: 0.7rem;
+}
+
+/* Company Info Grid */
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  background: #f8f9ff;
+  border-radius: 6px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.company-item:hover {
+  background: #f0f2ff;
+  transform: translateY(-1px);
+}
+
+.item-icon-circle {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-label {
+  display: block;
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-value {
+  display: block;
+  font-size: 0.75rem;
+  color: #1a1a2e;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Contact CTA - Updated for button */
+.contact-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(90deg, #f0f2ff 0%, #e8ebff 100%);
+  border-radius: 8px;
+  border-left: 3px solid #4a6cf7;
+}
+
+.cta-icon {
+  font-size: 1.2rem;
+}
+
+.cta-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cta-text {
+  font-size: 0.8rem;
+  color: #1a1a2e;
+  font-weight: 500;
+}
+
+.cta-button {
+  background: #4a6cf7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.cta-button:hover {
+  background: #3a5ce5;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(74, 108, 247, 0.2);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 1.5rem 0;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+  
+  .about-title {
+    font-size: 1.4rem;
+  }
+  
+  .about-tagline {
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+  }
+  
+  .about-card {
+    padding: 1.25rem;
+  }
+  
+  .company-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .specialities-tags {
+    gap: 0.4rem;
+  }
+  
+  .speciality-tag {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1.25rem 0;
+  }
+  
+  .about-card {
+    padding: 1rem;
+  }
+  
+  .company-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .speciality-tag {
+    font-size: 0.7rem;
+  }
+  
+  .tag-separator {
+    display: none;
+  }
+  
+  .specialities-tags {
+    gap: 0.3rem;
+    flex-wrap: wrap;
+  }
+  
+  .speciality-tag {
+    background: #f0f2ff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+  
+  .cta-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
