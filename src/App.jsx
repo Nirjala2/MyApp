@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Chatbot from "./components/Chatbot";
+import Chatbot from "./components/chatbot";
 import ScrollTop from "./components/ScrollTop";
 import Home from "./sections/home";
 import Services from "./sections/services";
