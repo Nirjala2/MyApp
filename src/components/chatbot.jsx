@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { FaComment, FaTimes, FaPaperPlane } from 'react-icons/fa';
-import '../styles/Chatbot.css';
+import '../styles/chatbot.css';
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
